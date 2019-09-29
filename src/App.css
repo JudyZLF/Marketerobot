@@ -1,0 +1,66 @@
+/* Default styles that will carry to the child style sheet */
+html,body{
+  background-color:white;
+}
+table th, table td { padding: 0 0; text-align: center; }
+img { width: auto; max-width: 100%; }
+
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  overflow-y:hidden;
+}
+.nav-title{
+   font-family: 'Abril Fatface', cursive; 
+}
+.navbar-header .nav-title:hover{
+  background:#fff;
+  color:#000;
+}
+
+.cative{
+  font-family:'Comfortaa', cursive;
+}
+.navbar-collapse .navbar-nav li a:hover,
+.navbar-collapse .navbar-nav li a:focus{
+  color:#000;
+  background:#fff;
+}
+/* structural elements */
+
+
+/* response to media 通过媒介查询来设置样式 Media Queries,Media Queries 是响应式设计的核心*/
+/* 终端的分辨率768px 和1024px 之间*/
+/*设定兼容 iPad 和 iphone 的视图*/
+/* iPad */
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+  #head{
+    width:100%;
+    font-size: 12px;
+    background-color:pink
+  }
+  #wrapper{
+    margin-top: 200px;
+    width: 100%;
+    margin: 0 auto;
+    background:pink;
+    /* padding: 20px; */
+  }
+  #content{
+      width: 54%;
+      float: left;
+      margin-right: 3%;
+  }
+  #sidebar-left{
+      width: 20%;
+      float: left;
+      margin-right: 3%;
+  }
+  #sidebar-right{
+      width: 20%;
+      float: left;
+  }
+
+}
