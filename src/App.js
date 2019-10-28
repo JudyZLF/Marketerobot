@@ -8,13 +8,17 @@ import Footer from './components/Footer'
 import Message from  './components/Message'
 import Counter from  './components/Counter'
 import FunctionClick from './components/FunctionClick'
-import ClassClick from './components/Class';
+import ClassClick from './components/ClassClick'
+import EventBind from './components/EvenBind'
+import ParentComponnet from './components/ParentComponent'
+import UserGreeting from './components/UserGreeting'
+import NameList from './components/NameList'
 
 function App() {
   return (
        
     <div className="container">
-      <Header name="navName"  heroName="hhhhh">
+      {/* <Header name="navName"  heroName="hhhhh">
         <p>this is children</p>
       </Header>
       <Main name="main name"  heroName="main hero"></Main>
@@ -23,6 +27,11 @@ function App() {
       <FunctionClick/>
       <ClassClick/>
       <Footer/>
+      <EventBind /> */}
+
+      {/* <ParentComponnet></ParentComponnet> */}
+      <UserGreeting/>
+      <NameList/>
     
     </div>
     
